@@ -46,7 +46,7 @@ def simular_petri_red(input_string):
     current_state = {"Inicio": 1}
     estados.append(current_state.copy())
     
-    for letra in string_filtrado:
+    for letra in input_string:
         if letra in output_esperado:
             current_state = {letra: 1}
         else:
